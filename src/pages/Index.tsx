@@ -22,6 +22,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-2">
             <DarkModeToggle />
             <RoleSwitcher />
+          </div>
         </div>
       </header>
 
