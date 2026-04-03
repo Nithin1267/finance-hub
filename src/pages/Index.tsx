@@ -5,6 +5,7 @@ import BalanceTrendChart from "@/components/dashboard/BalanceTrendChart";
 import SpendingBreakdown from "@/components/dashboard/SpendingBreakdown";
 import TransactionsTable from "@/components/dashboard/TransactionsTable";
 import InsightsPanel from "@/components/dashboard/InsightsPanel";
+import DarkModeToggle from "@/components/dashboard/DarkModeToggle";
 import { LayoutDashboard } from "lucide-react";
 
 const Dashboard = () => {
@@ -18,7 +19,10 @@ const Dashboard = () => {
             </div>
             <h1 className="text-xl font-heading font-bold tracking-tight">FinDash</h1>
           </div>
-          <RoleSwitcher />
+          <div className="flex items-center gap-2">
+            <DarkModeToggle />
+            <RoleSwitcher />
+          </div>
         </div>
       </header>
 
